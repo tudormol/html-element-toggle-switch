@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="ToggleSwitch.css" rel="stylesheet" />
+    <script src="ToggleSwitch.js"></script>
+</head>
+
+<body>
+    <toggle-switch class="toggle" data-values="answer|source|other" data-value="answer"></toggle-switch>
+    <br/>
+
+    <button class="changeVal1">Change val to source</button> <button class="changeVal2">Change val to other</button>
+
+    <script>
+
+        // listen to the 'change' event to get the new value
+        document.querySelector('.toggle').addEventListener('change', function (e) {
+            console.log('changed, new value:', e.detail.value)
+        })
+
+        // listen to the 'clicked' event to get any click update (also on the current value)
+        document.querySelector('.toggle').addEventListener('clicked', function (e) {
+            console.log('clicked any tab, value:', e.detail)
+        })
+
+        // change the value programatically
+        document.querySelector('.changeVal1').addEventListener('click', function (e) {
+            document.querySelector('.toggle').dataset.value = 'source'
+        })
+
+        document.querySelector('.changeVal2').addEventListener('click', function (e) {
+            document.querySelector('.toggle').dataset.value = 'other'
+        })
+
+    </script>
+</body>
+
+</html>

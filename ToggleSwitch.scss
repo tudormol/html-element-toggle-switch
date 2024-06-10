@@ -1,0 +1,40 @@
+body {
+    background: #000;
+    font-family: sans-serif;
+}
+
+toggle-switch {
+    display: inline-block;
+    cursor: pointer;
+    background: rgb(60, 58, 64);
+    border-radius: 6px;
+    line-height: 19px;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0 4px;
+    font-weight: 300;
+    margin: 12px 0;
+    user-select: none;
+    text-transform: capitalize;
+    padding: 2px;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+
+    span {
+        padding: 6px 8px;
+        border-radius: 6px;
+        color: #fff;
+        min-width: 70px;
+        display: inline-block;
+        text-align: center;
+
+        &.active {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}
+
+    
