@@ -3,6 +3,8 @@ A ToggleSwitch HTMLElement Component
 
 Toggle switch with two (or more) options.
 
+![toggle switch](http://tudormoldovan.eu/git-assets/toggle.png)
+
 Use as:
 
 HTML:
